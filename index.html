@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Increase or Decrease</title>
+    </head>
+    <body>
+        <div style="margin-top: 10%; margin-left: 0%; position: relative;">
+            <div class="heading"> COUNTER </div>
+            <div>
+                <button class="incrBtn" onclick="incr()"> 
+                    + 
+                </button>
+            </div>
+            <div class="count" id="countVal">
+                0
+            </div>
+                <button class="decrBtn" onclick="decr()">
+                -
+                </button>
+            <div>
+                <!-- <a href="https://youtube.com" target="_blank">
+                Youtube 
+                </a> -->
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+<style>
+    .incrBtn {
+        background-color: pink;
+        color: white;
+        border-color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 5px;
+        font-weight: bold;
+        padding-left: 25px;
+        padding-right: 26px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-self: center;
+        text-align: center;
+        transition: background-color 0.2s;
+        vertical-align: top;
+        width: 20%;
+        word-wrap: break-word;
+        left: 40%;
+        position: relative;
+    }
+    .incrBtn:hover {
+        background-color: rgb(103, 103, 246);
+        opacity: 0.6 2s;
+        /* box-shadow: 5px 5px 5px rgba(0, 0, 0, .5); */
+    }
+    .incrBtn:active {
+        opacity: 0.8;
+    }
+
+    .decrBtn {
+        background-color: aquamarine;
+        color: white;
+        border-color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 5px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-self: center;
+        text-align: center;
+        transition: background-color 0.2s;
+        align-content: center;
+        width: 20%;
+        word-wrap: break-word;
+        left: 40%;
+        position: relative;
+    }
+    .decrBtn:hover {
+        background-color: rgb(103, 103, 246);
+        opacity: 0 2s;
+    }
+    .decrBtn:active {
+        opacity: 0.8;
+    }
+
+    .count {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:40px;
+        font-weight: bold;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        color:rgb(116, 116, 146);
+        text-align: center;
+    }
+    
+    .container {
+        height: 200px;
+        position: relative;
+        top: 50%;
+        border: 5px solid rgb(237, 231, 223);
+        padding-top: 32px;
+        align-content: center;
+        top: 50%;
+        transform: translateY(0%, -50%);
+    }
+
+    .heading {
+        position: relative;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 50px;
+        color:rgb(116, 116, 146);
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+</style>
